@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Whack-a-Weenie</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Bangers|Acme|Permanent+Marker' rel='stylesheet' type='text/css'>
+	<style type="text/css"></style>
+	<link rel="stylesheet" href="/whackaweenie/css/whack-css.css">
+	<link rel="stylesheet" href="/whackaweenie/js/jquery-ui.min.css">
+</head>
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="dogModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header modal_style">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="myModal"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">You Got a New High Score!</h4>
+      </div>
+      <div class="modal-body">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VOcBI-fbDVo" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer modal_style">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- body html -->
+<div class="container-fluid background">
+	<div class="row">
+		<div class="heading">
+			<h1>Whack-a-Weenie</h1>
+			<p>(weenie dog!)</p>
+		</div>	
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="row">
+				<button type="button" class="btn btn-primary btn-lg btn-success player_button" id="start">Start Game</button>
+			</div>
+			<div class="row">
+				<button type="button" class="btn btn-primary btn-lg btn-danger player_button" id="quit">Quit Game</button>
+			</div>
+			<div class="display">
+				<div class="score">
+					<h3>Score</h3>
+					<div class="scorekeeper" id="scoreKeeper">0</div>
+				</div>
+				<div class="score">
+					<h3>Timer</h3>
+					<div class="timer" id="timer">30</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div id="area">
+					<div class="hole" id="1"></div>
+					<div class="hole" id="2"></div>
+					<div class="hole" id="3"></div>
+					<div class="hole" id="4"></div>
+					<div class="hole" id="5"></div>
+					<div class="hole" id="6"></div>
+					<div class="hole" id="7"></div>
+					<div class="hole" id="8"></div>
+					<div class="hole" id="9"></div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="high_score">
+				<h3>High Score</h3>
+				<div id="high_score"></div>
+			</div>
+			<div class="doghouse"><img src="/img/dog house.png"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8 grass">
+		</div>
+	</div>
+</div>
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="/js/external/jquery/jquery.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="/js/whackamole.js"></script>
+
+</body>
+</html>

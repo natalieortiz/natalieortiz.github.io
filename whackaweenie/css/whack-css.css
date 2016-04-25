@@ -1,0 +1,99 @@
+
+.add_weenie{
+	background: url(/img/dachshund.png) no-repeat center;
+}
+
+#area {
+	width: 450px;
+	height: 450px;
+	background: rgba(255,255,255,.5);
+	margin: auto;
+}
+
+.background {
+	background: url(/img/backyard.jpg) no-repeat fixed;
+}
+
+.display {
+	margin-top: 150px;
+	margin-left: 20px;
+	text-align: center;
+	width: 210px;
+	height: 120px;
+	color: white;
+	background: rgb(48,144,192);
+	border-radius: 5px;	
+	border: solid 4px rgb(255,192,36);
+}
+
+.doghouse {
+	margin-top: 100px;
+	margin-right: 10px;
+	margin-bottom: 30px;
+
+}
+.grass{
+	height: 30px;
+}
+.heading {
+	text-align: center;
+	color: white;
+	margin-bottom: 20px;
+	font-family: 'Acme', sans-serif;
+	font-size: 20px;
+}
+.heading h1{
+	font-size: 48px;
+}
+
+
+.high_score {
+	margin-top: 25px;
+	text-align: center;
+	width: 210px;
+	height: 120px;
+	color: white;
+	background: rgb(48,144,192);
+	border-radius: 5px;	
+	border: solid 4px rgb(255,192,36);
+}
+
+#high_score{
+	font-size: 2em;
+}
+
+.hole{
+	width: 150px;
+	height: 150px;
+	border: dotted 1px;
+	border-color: light grey;
+	float: left;
+}
+
+.modal_style{
+	color: rgb(48,144,192);
+	font-family: 'Acme', sans-serif;
+	text-align: center;
+}
+
+.modal_button{
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+
+.player_button {
+	margin-top: 10px;
+	margin-left: 60px;
+	width: 150px;
+}
+.score {
+	float: left;
+	width: 100px;
+	text-align: center;
+}
+.scorekeeper{
+	font-size: 2em;
+}
+.timer{
+	font-size: 2em;
+}
