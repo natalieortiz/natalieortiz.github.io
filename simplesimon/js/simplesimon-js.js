@@ -9,7 +9,7 @@ $(document).ready(function() {
 	var position = 0;
 	var counter = 0;
 	var beep = new Audio('/simplesimon/audio/beep-02.mp3');
-	var wrongBeep = new Audio('/simplesimon/audio/Darth_Vader_No.mp3');
+	var wrongBeep = new Audio('/simplesimon/audio/Price-is-right-losing-horn.mp3');
 
 	//Starts the game. 
 	$('#go').click(function (){
