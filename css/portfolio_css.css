@@ -34,12 +34,21 @@ body {
     color: white;
 
 }
-
 .codestyle p {
     padding-left: 35px;
     padding-right: 35px;
     text-align: center;
 }
+
+.mainheading{
+  font-family: 'Sorts Mill Goudy', serif;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px; 
+  padding-top: 20px;
+}
+
 
 .projects {
     padding-left: 35px;
@@ -57,13 +66,6 @@ body {
 }
 .projects p {
     padding: 5px; 
-}
-
-.mainheading{
-  font-family: 'Sorts Mill Goudy', serif;
-  text-align: center;
-  padding-bottom: 15px;
-  padding-top: 20px;
 }
 
 
