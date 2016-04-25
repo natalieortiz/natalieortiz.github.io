@@ -8,8 +8,8 @@ $(document).ready(function() {
 	var	random;
 	var position = 0;
 	var counter = 0;
-	var beep = new Audio('/audio/beep-02.mp3');
-	var wrongBeep = new Audio('/audio/Darth_Vader_No.mp3');
+	var beep = new Audio('/simplesimon/audio/beep-02.mp3');
+	var wrongBeep = new Audio('/simplesimon/audio/Darth_Vader_No.mp3');
 
 	//Starts the game. 
 	$('#go').click(function (){
