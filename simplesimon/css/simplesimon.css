@@ -1,0 +1,135 @@
+.area {
+    height: 450px;
+    width: 450px;
+    background: lightgrey;
+    background: rgb(188,198,204);
+    border-style: outset;
+    border-width: 6px;
+    border-color: rgb(102,102,102); 
+    border-radius: 5px; 
+    margin-bottom: 100px;
+}
+
+.author{
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    padding-left: 15px;
+}
+
+.background {
+    background-image: url(/img/hexabump.png);
+}
+
+.menu{
+    height: 270px;
+    width: 250px;
+    background: rgb(188,198,204);
+    border-style: outset;
+    border-width: 6px;
+    border-color: rgb(102,102,102); 
+    border-radius: 5px; 
+}
+.score{
+    width: 200px;
+    height: 100px;
+    margin-left: 32px;
+    background: rgb(0,58,229);
+    border: inset;
+    border-width: 3px;
+    border-color: rgb(102,102,102);
+    color: rgb(196,229,6);
+    margin-top: 20px;
+    font-size: 20px;
+    padding-top: 5px;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+#scorekeeper{
+    font-size: 25px;
+}
+
+
+#go {
+    height: 100px;
+    width: 200px;
+    border-radius: 50%;
+    background: rgb(0,105,3);
+    color: white;
+    padding: 30px; 
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: 'Orbitron', sans-serif;
+    border-color: rgb(102,102,102); 
+    border-width: 2px;
+    float: left;
+    font-size: 1.3em;
+}
+
+
+/*Hover classes*/
+.pink:hover {
+    background: rgb(227,0,116);
+}
+
+.green:hover {
+    background: rgb(184,208,0);
+}
+
+.orange:hover {
+    background: rgb(255,153,0);
+}
+.blue:hover {
+    background: rgb(33,117,217);
+}
+#go:hover{
+    background: rgb(0,229,6);
+}
+#stop:hover{
+    background: rgb(229,13,0);
+}
+
+/*Color Divs*/
+.pink {
+    width: 200px;
+    height: 200px;
+    background: rgb(158,0,81);
+    float: left;
+    margin-left: 18px;
+    margin-top: 20px;
+    border-radius: 5px; 
+}
+.green {
+    width: 200px;
+    height: 200px;
+    background: rgb(128,145,0);
+    float: left;
+    margin-top: 20px;
+    border-radius: 5px;  
+}
+.orange {
+    width: 200px;
+    height: 200px;
+    background: rgb(178,107,0);
+    float: left;
+    margin-left: 18px; 
+    border-radius: 5px; 
+}
+.blue {
+    width: 200px;
+    height: 200px;
+    background: rgb(19,70,130);
+    float: left;
+    border-radius: 5px; 
+}
+
+
+.heading{
+    margin-top: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+}
