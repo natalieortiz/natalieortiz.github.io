@@ -1,0 +1,89 @@
+
+
+body { 
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    color: rgb(16,37,66);
+}
+.navstyle {
+    background-color: rgb(16,37,66);
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.myname {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+.navstyle a:link {
+    color: white;
+}
+.navstyle a:visited {
+    color: rgb(179,163,148);
+}
+.navstyle a:hover {
+
+    color: rgb(245,105,86);
+}
+
+.codestyle {
+    background-color: rgb(245,105,86); 
+    padding-top: 70px;
+    padding-bottom: 50px;
+    font-size: 1em;
+    color: white;
+
+}
+
+.codestyle p {
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: center;
+}
+
+.projects {
+    padding-left: 35px;
+    padding-right: 35px; 
+    padding-top: 50px;
+    padding-bottom: 70px; 
+}
+
+.projects img {
+    width: 100%;
+}
+.projects h3 {
+    font-weight: bold;
+    padding-left: 5px;
+}
+.projects p {
+    padding: 5px; 
+}
+
+.mainheading{
+  font-family: 'Sorts Mill Goudy', serif;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+
+
+.contact {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.footer {
+    padding-left: 15px;
+    color: rgb(255,223,50);
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 1em;
+    background-color: rgb(16,37,66);
+}
+.footer h3 {
+    text-align: left;
+    font-family: 'Sorts Mill Goudy', serif;
+    text-decoration: underline;
+}
+
+

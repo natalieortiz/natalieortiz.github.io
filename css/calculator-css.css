@@ -1,0 +1,101 @@
+.background{
+    background-image: url(/img/graph_paper.jpg);
+    background-position: fixed; 
+}
+.spacer {
+    height: 40px; 
+}
+
+.heading1 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+.btn_size {
+    height: 70px;
+    width: 70px;
+    margin-top: 3px;
+    font-size: 2em;
+}
+.btn_size_big {
+    height: 70px;
+    width: 144px;
+    margin-top: 3px;
+    font-size: 2em;
+}
+
+.top {
+    padding-top: 5px; 
+}
+.center {
+    text-align: center;
+}
+
+.left_operand {
+    width: 105px;
+    height: 60px;
+    border: 1px solid black;
+    margin-right: 2px;
+    border-radius: 5px; 
+    padding: 5px;
+    font-family: 'Ubuntu', sans-serif; 
+    font-size: 1.5em;
+}
+
+.operator_style {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    margin-right: 2px;
+    padding: 5px;
+    border-radius: 5px; 
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+}
+.right_operand {
+    width: 105px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 5px; 
+    padding: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+}
+
+.box {
+    width: 380px;
+    padding-bottom: 30px; 
+    border-style: outset;
+    border-width: 6px;
+    border-color: #7F4F7F; 
+    background-color: #400D31;
+    border-radius: 5px; 
+}
+
+.scratch{
+    margin-top: 20px; 
+    font-color: black;
+}
+.scratch_area {
+    margin-top: 10px;
+    margin-left: 5px;
+    height: 400px;
+    width: 300px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.5em; 
+    letter-spacing: 1.5px;
+    color: black;
+
+}
+.scr_btn {
+    background-color: #022B40;
+    width: 140px; 
+    color: white;
+    font-size: 1.3em; 
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 5px;
+}
+
+.clear {
+    margin-left: 12px; 
+}

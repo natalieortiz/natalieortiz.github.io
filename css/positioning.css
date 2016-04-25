@@ -1,0 +1,84 @@
+body {
+    color: white;
+    text-align: top;
+}
+h1 {
+    color: purple;
+    text-decoration: underline;
+}
+
+.box {
+    color: white;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.red img {
+    position: relative;
+    top: -70px;
+    right: -25px;
+}
+
+.red {
+    margin-top: 50px;
+    margin-left: 0px;
+    background-color: red;
+    position: absolute;
+}
+.orange { 
+    margin-top: 50px;
+    float: left;
+    margin-left: 82px;
+    background-color: orange;
+}
+.orange img {
+    position: relative;
+    top: -70px;
+    right: -25px;
+}
+
+.yellow {
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 164px;
+    background-color: yellow;
+}
+
+.yellow img {
+    position: relative;
+    top: -70px;
+    right: -25px;
+}
+.green {
+    position: absolute;
+    margin-top: 140px;
+    background-color: green;
+}
+.green img {
+    position: relative;
+    top: -70px;
+    right: -25px;
+}
+.blue {
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 82px;
+    background-color: blue;
+}
+.blue img {
+    position: relative;
+    top: -70px;
+    right: -25px;
+}
+.purple {
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 164px;
+    background-color: purple;
+}
+.purple img {
+    position: relative;
+    top: -70px;
+    right: -25px;
+}

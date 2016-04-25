@@ -1,0 +1,108 @@
+
+body {
+	background-color: black;
+	background-repeat: no-repeat;
+}
+
+.top {
+	position: relative;
+	font-family: 'Domine', serif;
+	font-size: 2em;
+	color: white;
+	margin-right: 15px;
+}
+
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+.songborder {
+	color: white;
+	font-family: 'Domine', serif;
+	font-size: 1.2em;
+	text-align: center;
+	letter-spacing: 3px;
+}
+.upper {
+	margin-top: 5px;
+}
+.lower {
+	margin-bottom: 5px;
+}
+.container {
+	width: 1200px; 
+	margin: 50px auto;
+	padding-top: 25px;
+	padding-bottom: 25px; 
+	font-family: 'Architects Daughter', cursive;
+}
+
+.box {
+    height: 20px;
+    padding: 5px;
+    font-size: 1.2em;
+    border: 1px solid black;
+    border-radius: 10px;
+  	border: 3px dotted #BADA55;
+    text-align: center;
+    background-color: #FFFFE0;
+}
+
+.line1 {
+	width: 260px;
+	margin-bottom: 45px;
+	margin-left: 100px;
+}
+
+.line2 {
+	width: 230px;
+	margin-bottom: 175px;
+	margin-left: 800px;
+}
+
+.line3 {
+	width: 200px;
+	margin-bottom: 122px;
+	margin-left: 420px;
+}
+.line4 {
+	width: 110px;
+	margin-bottom: 35px;
+	margin-left: 700px;
+}
+.line5 {
+	width: 130px;
+	margin-left: 53px;
+	margin-bottom: 155px;
+}
+.line6 {
+	width: 120px;
+	margin-left: 345px;
+	margin-bottom: 177px;
+}
+.line7 {
+	width: 200px;
+	margin-bottom: 115px;
+	margin-left: 110px;
+}
+.line8 {
+	width: 230px;
+	margin-bottom: 115px;
+	margin-left: 900px;
+}
+.line9 {
+	width: 200px;
+	margin-bottom: 115px;
+	margin-left: 215px;
+}
+.imagebottom img { 
+    width: 100%;
+    height: auto;
+}

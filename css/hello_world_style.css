@@ -1,0 +1,78 @@
+#wrapper {
+    margin: 50px auto;
+    width: 1000px;
+    padding: 20px;
+    background-color: rgb(179, 255, 204);
+    text-align: center;
+}
+
+body {
+    background-image: url(/img/congruent_pentagon.png);
+    font-size: 1.3em;
+    font-family: 'Lora', serif; 
+    font-weight: bold;
+}
+
+.sunrise {
+    max-width: 1000px;
+}
+.mainheading { 
+    color: rgb(0, 76, 153);
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+}
+.secondheading {
+    color: rgb(0, 100, 0);
+    text-decoration: underline;    
+}
+.quote p {
+    text-align: right;
+}
+blockquote {
+    font-style: italic;
+}
+cite {
+    text-align: right;
+}
+ol { 
+    list-style-type: lower-alpha;
+    list-style-position: inside;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: circle;
+}
+img {
+    border-radius: 35px;
+}
+a:link {
+    color: rgb(204, 0, 102);
+}
+a:visited {
+    color: rgb(0, 0, 102);
+}
+.car {
+    text-align: center;
+    color: rgb(61, 0, 77);
+}
+
+table, th, td {
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+    height: 40px;
+}
+th {
+    background-color: rgb(0, 76, 153);
+    color: white;
+    font-weight: normal;
+}
+tr {
+    background-color: white;
+}
+
