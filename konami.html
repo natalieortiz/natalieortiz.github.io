@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Konami Code</title>
+	<style>
+		.heading {
+			margin-top: 50px;
+			font-family: 'Playfair Display', serif;
+			text-align: center;
+			margin-bottom: 30px;
+			color: #088DA5;
+		}
+		.text {
+			font-family: 'Cinzel', serif;
+			text-align: center;
+		}
+		.puppy{
+			text-align: center;
+		}
+	</style>
+	<link href='https://fonts.googleapis.com/css?family=Cinzel:400,700|Playfair+Display' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<h1 class="heading">Konami Code</h1>
+	<p class="text">Type the following keys:</p>
+	<p class="text">"↑ ↑ ↓ ↓ ← → ← → b a enter"</p>
+	<div class="puppy" id="puppy1" height="250"></div>
+	<div class="puppy" id="puppy2" height="250"></div>
+	<script type="text/javascript"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+		"use strict";
+
+		var konami = [38,38,40,40,37,39,37,39,66,65,13];
+		var position = 0;
+		console.log(konami.length);
+
+		$(document).keyup(function(event){
+			if (event.keyCode == konami[position]) {
+				console.log("correct");
+				console.log(event.keyCode);
+				console.log(position);
+				position++;              
+			}   else {
+				console.log("incorrect");
+				position = 0;
+			}
+
+			if (position == konami.length) { 
+				$('#puppy1').append('<img src="img/corgi_puppy.gif" height="250" width="450"><img src="img/hotdogs.gif" height="250" width="450">');
+				$('#puppy2').append('<img src="img/shiba_puppy.gif" height="250" width="450"><img src="img/tracy.gif" height="250" width="450">');
+				$('body').css('background-image', 'url(/img/hearts.jpg)');
+				$('heading').css('color','#088DA5');
+			}
+
+		});
+
+	</script>
+</body>
+</html>
