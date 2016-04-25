@@ -35,24 +35,22 @@ body {
 
 }
 .codestyle p {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
     text-align: center;
 }
 
 .mainheading{
   font-family: 'Sorts Mill Goudy', serif;
   text-align: center;
-  padding-bottom: 15px;
-  padding-left: 30px;
-  padding-right: 30px; 
+  padding-bottom: 15px; 
   padding-top: 20px;
 }
 
 
 .projects {
-    padding-left: 35px;
-    padding-right: 35px; 
+    padding-left: 50px;
+    padding-right: 50px; 
     padding-top: 50px;
     padding-bottom: 70px; 
 }
@@ -76,7 +74,7 @@ body {
 
 .footer {
     padding-left: 15px;
-    color: rgb(255,223,50);
+    color: white;
     padding-top: 10px;
     padding-bottom: 5px;
     font-size: 1em;
