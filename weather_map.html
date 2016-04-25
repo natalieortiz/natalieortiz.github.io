@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Map</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/weather_map.css">
+    <link href='https://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+</head>
+<body class="body">
+<div class="container-fluid">
+	<div class="row">
+			<div class="header col-md-12">Weather Forecast Anywhere<img src="/img/rainbow.png"></div>
+	</div>
+	<div class="row">
+	<div class="col-md-10 col-md-offset-1 blank">
+		<div class="row">
+			<div class="col-md-12">
+				<div id="city_name" class="city_name"></div>
+				<div id="forecast"></div>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="map-canvas"></div>
+				<div class="lat_long">
+				<form class="form-inline" id="search_form">
+					<p class="header_text bold">Drag the marker to a location to find the weather.</p>
+					<div class="form-group search_class">
+						<label for="location" class="header_text bold">Or Search for a Location:</label>
+					    <input type="text" class="text_box" placeholder="Enter Location" id="location">
+					    <button type="submit" class="btn btn-default btn-success" id="search">Find Location</button>
+					</div>
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 footer">
+			<p>Created by Natalie Ortiz</p>
+		</div>
+	</div>
+</div>
+<!-- Load the Google Maps API [DON'T FORGET TO USE A KEY] -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWs1sfMFNDNq25WBVzAKE0T3ARtpG0RA4"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+(function(){
+	"use strict";
+
+	//get map
+	var myLatlng = new google.maps.LatLng(29.426791,-98.489602);
+	// Set our map options
+	var mapOptions = {
+		// Set the zoom level
+		zoom: 5,
+
+		// This sets the center of the map at our location
+		center: myLatlng,
+		mapTypeControlOptions: {
+      		mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+    	}
+	};
+
+	// Render the map
+	var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+	
+	//New marker
+	var marker = new google.maps.Marker({
+	    position: myLatlng,
+	    draggable:true,
+	    map: map,
+	    title:"Drag me!"
+	});
+
+	//Set Marker
+	marker.setMap(map);
+
+	//Global variables for latitude and longitude. 
+	var latitude;
+	var longitude;
+
+	//function to get the Weather where a marker is located. 
+	function getWeather (){
+        var weather = $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
+	    APPID: "f97ab9e536a6a913b3a0d48dc0540193",
+	    lat: latitude,
+	    lon: longitude,
+	    units: "imperial",
+	    cnt: 3
+		});
+		//Waiting for weather to load.
+		weather.done (function(data){
+			var box = $('#forecast');
+			var name_box = $('#city_name');
+			var name = data.city.name;
+			name_box.html(name);
+			var content = "";
+			var day = data.list;
+
+		//Taking weather info to append html.
+		day.forEach(function(day,index){
+				//create html for weather - ID 'box'
+				content += "<div class='day'><span class='bold'><p>" + day.temp.min.toFixed(0) + "°F / " +  day.temp.max.toFixed(0) + "°F</p></span>";
+				content += "<p><img src='http://openweathermap.org/img/w/"+ day.weather[0].icon +  ".png'></p>";
+				content += "<p><span class='bold'>Humidity:</span> " + day.humidity + "%</p>";
+				content += "<p><span class='bold'>Wind:</span> " + day.speed + "</p>";
+				content += "<p><span class='bold'>Pressure:</span> " + day.pressure + "</p></div>"
+			})
+			//Replace box div with html content. 
+			box.html(content);
+		});
+	} //end of getWeather function. 
+
+	//Recentering map where user drags marker and getting the weather. 
+	google.maps.event.addListener(marker, 'dragend', function(evt){
+    		latitude = evt.latLng.lat();
+    		longitude = evt.latLng.lng();
+    		map.setZoom(8);
+			map.panTo(marker.position);
+			getWeather();
+	});
+
+
+    //Search form actions.
+    $('#search_form').submit(function(event){
+		event.preventDefault();
+	    // Init geocoder object
+		var geocoder = new google.maps.Geocoder();
+
+		//Getting user input. 
+		var location = $('#location').val();
+
+		// Geocode our address
+		geocoder.geocode({ "address": location }, function(results, status) {
+		// Check for a successful result
+		if (status == google.maps.GeocoderStatus.OK) {
+			latitude = results[0].geometry.location.lat();
+			longitude = results[0].geometry.location.lng();
+		   	
+			marker.setPosition(results[0].geometry.location);
+			map.panTo(marker.position);
+
+			getWeather();
+
+		} else {
+
+		   // Show an error message with the status if our request fails
+		   alert("Geocoding was not successful - STATUS: " + status);
+		}
+		});
+    });//end of search form function. 
+	
+})();
+
+
+</script>
+</body>
+</html>
