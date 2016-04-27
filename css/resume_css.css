@@ -71,6 +71,10 @@ body {
 .skills {
     padding-bottom: 70px; 
 }
+
+.skill p {
+    font-family: 'Josefin Sans', sans-serif;   
+}
 .education {
     padding-left: 70px;
     background-color: rgb(16,37,66);
