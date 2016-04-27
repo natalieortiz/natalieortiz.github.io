@@ -8,19 +8,24 @@ body {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
 }
-.myname {
+#myname {
     font-family: 'Sorts Mill Goudy', serif;
     font-weight: bold;
     font-size: 1em;
-}
-.navstyle ul a:link {
     color: white;
 }
-.navstyle ul a:visited {
+#links a:link {
+    color: white;
+}
+#links a:visited {
     color: rgb(179,163,148);
 }
-.navstyle ul a:hover {
+#links a:hover {
     color: rgb(245,105,86);
+}
+
+#forcedcolor{
+    background-color: rgb(16,37,66)
 }
 .mainheading{
   font-family: 'Sorts Mill Goudy', serif;
@@ -76,18 +81,19 @@ body {
     font-family: 'Josefin Sans', sans-serif;   
 }
 .education {
-    padding-left: 70px;
     background-color: rgb(16,37,66);
     color: white;
 }
 
 .edutext{
+    padding-left: 70px;
     padding-top: 10px;
     line-height: 225%;
     font-size: 1em; 
 }
-.education img{
+.notredame {
     width: 400px;
+    margin: auto;
 }
 .education h1 {
   font-family: 'Sorts Mill Goudy', serif;
@@ -105,6 +111,10 @@ body {
 .work .ventev {
     padding-top: 40px;  
     vertical-align: middle;
+}
+
+.ventev img {
+    padding-bottom: 0px;
 }
 .skills {
     text-align: center;

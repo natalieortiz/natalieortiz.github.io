@@ -3,40 +3,40 @@
 <head>
     <title>Resume</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,600italic,700|Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/resume_css.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-<nav class="navbar navbar-fixed-top navstyle">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div class="navbar-brand navstyle myname">Natalie Ortiz</div>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navstyle">
-        <li><a href="http://www.linkedin.com/in/ndnatalie" title="LinkedIn" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
-        
-        <li><a href="https://github.com/natalieortiz" title="GitHub" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://natalieortiz.github.io/portfolio.html">Portfolio</a></li>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid navstyle">
+        <div class="navbar-header navstyle">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand navstyle" id="myname">Natalie Ortiz</div>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse navstyle">
+          <ul class="nav navbar-nav navstyle">
+            <li id="links"><a href="https://github.com/natalieortiz" title="Github"><i class="fa fa-github fa-lg"></i></a></li>
+            <li id="links"><a href="http://www.linkedin.com/in/ndnatalie" title="LinkedIn"><i class="fa fa-linkedin fa-lg"></i></a></li>
+          </ul>
+        <ul class="nav navbar-nav navbar-right navstyle">
+        <li id="links"><a href="http://natalieortiz.github.io/portfolio.html">Portfolio</a></li>
           </ul>
         </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 <div class="container-fluid">
     <div class="top row">
         <div class="col-md-12">
@@ -45,9 +45,9 @@
                     <img src="/img/headshot.jpg" class="img-circle" alt="Natalie Ortiz">
                 </div>  
             
-                <div class="col-md-12">
+                <div class="col-md-10 col-md-offset-1">
                     <h1 class="name">Natalie Ortiz</h1>
-                    <p><em>Full-stack bootcamp graduate seeks entry into software developer role while utilizing Notre Dame business degree in Management Information Systems and 7+ years in the tech industry.  </em>
+                    <p><em>Full-stack bootcamp graduate seeks entry into a software developer role while utilizing a business degree in Management Information Systems from the University of Notre Dame and 7+ years in the tech industry.  </em>
                     </p>
                 </div>
                 
@@ -70,7 +70,7 @@
     </div>
     
     <div class="skills">
-        <h2 class="mainheading">Skills / Experience</h2>    
+        <h2 class="mainheading">Skills</h2>    
         <div class="row">
             <div class="col-md-4">
                 <h3><strong>Front-End</strong></h3>
@@ -103,14 +103,14 @@
             <div class="col-xs-12 col-md-8">
                 <h1 class="mainheading">Education</h1>
                 <ul class="edutext">
-                    <li>Graduated from the University of Notre Dame, Class of 2003</li>
+                    <li>Graduate of the University of Notre Dame, Class of 2003</li>
                     <li>Bachelor of Business Administration in Management Information Systems</li>
                     <li>Student Manager of Notre Dame Fighting Irish Football</li>
                     <li>Member of the Monogram Club - Association of Former Student Athletes</li>
                 </ul>          
             </div>
             <div class="col-md-4">
-                <img src="/img/ND.jpg" class="img-responsive" alt="Notre Dame">
+                <img src="/img/ND.jpg" class="img-responsive notredame" alt="Notre Dame">
             </div>
         </div>
     </div>
@@ -121,22 +121,31 @@
             <div class="row">
                 <div class="col-md-4">
                     <img src="/img/rackspace_logo.png" alt="Rackspace" style="width:100px;">
+                    <h3>Rackspace</h3>
+                    <p>Talent Development Coordinator</p>
+                    <p>Project Coordinator</p>
+                    <p>Recruiting Coordinator</p>
                 </div>
 
                 <div class="col-md-4">
-                    <img src="/img/apple.png" alt="Apple" style="width:100px;"> 
+                    <img src="/img/apple.png" alt="Apple" style="width:100px;">
+                    <h3>Apple</h3>
+                    <p>Mac Expert</p> 
                 </div>                
                 <div class="col-md-4 ventev">
                     <img src="/img/large_ventev.jpg" alt="Ventev" style="width:160px;">
+                    <h3>Ventev</h3>
+                    <p>Sales Support Rep</p>
                 </div>
             </div>
-            <div class="row">
+<!--                 <div class="row">
                 <div class="col-md-4">
                     <h3>Rackspace</h3>
                     <p>Talent Development Coordinator</p>
                     <p>Project Coordinator</p>
                     <p>Recruiting Coordinator</p>
                 </div>
+
                 <div class="col-md-4">
                     <h3>Apple</h3>
                     <p>Mac Expert</p>
@@ -144,8 +153,8 @@
                 <div class="col-md-4">
                     <h3>Ventev</h3>
                     <p>Sales Support Rep</p>
-                </div>
-            </div>
+                </div> -->
+<!--             </div> -->
     </div>
 
     <div class="row footer contact">

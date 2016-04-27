@@ -10,19 +10,19 @@ body {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
 }
-.myname {
+#myname {
     font-family: 'Sorts Mill Goudy', serif;
     font-weight: bold;
     font-size: 1em;
-}
-.navstyle a:link {
     color: white;
 }
-.navstyle a:visited {
+#links a:link {
+    color: white;
+}
+#links a:visited {
     color: rgb(179,163,148);
 }
-.navstyle a:hover {
-
+#links a:hover {
     color: rgb(245,105,86);
 }
 
